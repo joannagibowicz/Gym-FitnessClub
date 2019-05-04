@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joanna Gibowicz">
+    <meta name="keywords" content="fitness, klub, club, siłownia, trener">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Akademia Siłacza</title>
+
+    <link rel="title icon" href="./img/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/kalkulator.css">
+    
+    <script src="./js/jquery-3.4.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Indie+Flower|Mrs+Sheppards|Pacifico&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+<body>
+    <header>
+       <div id="h">
+            <h1>Kalkulator BMI</h1>
+        </div>
+    </header>
+    <main>
+        <section id="definition">
+            <h2>Co to jest BMI ???</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet doloribus officiis veniam laudantium maiores corporis earum fuga. Rerum tempora aspernatur adipisci. Corporis inventore voluptatem expedita. Praesentium nesciunt ex voluptatum! Distinctio eum quasi aspernatur quia aliquid possimus, quidem, inventore quisquam nobis, facilis quibusdam mollitia ipsa. Quia assumenda culpa neque alias unde magnam nobis, quos ullam vitae dolores inventore, quae, possimus delectus eveniet cumque ducimus cum. Corrupti accusamus nam ipsam velit! Alias qui asperiores beatae commodi? Necessitatibus natus magnam illum. Nesciunt numquam ducimus adipisci magni facilis facere maiores atque, ex eum accusantium totam dolor officia ea optio obcaecati possimus itaque dicta iure sint! Earum quae excepturi labore quas doloribus sit rerum perspiciatis voluptatem dignissimos obcaecati officiis praesentium reprehenderit mollitia nemo, nihil necessitatibus, voluptate, consequuntur eos modi dolor laborum sed aliquid est. Delectus, voluptas. Accusantium iste harum asperiores, aut optio, modi minus labore facere sapiente earum perferendis non tempore qui laborum error illum pariatur aliquid sit deleniti consequuntur quia rem eius sed. Reprehenderit, accusamus! Quam quasi, facilis reiciendis iste, expedita corporis dolorum officia, totam magnam doloremque minus? Facilis impedit minima commodi rem reiciendis quis dolorum. Nulla, neque sequi quis aut asperiores voluptate quae rem! Libero exercitationem aut minima magni, iste nulla modi. Nam.</p>
+        </section>
+        <section>
+            <fieldset id="calculator">
+               <legend>Oblicz swoje BMI</legend>
+                Płeć<br>
+                <input type="radio" name="k">Kobieta
+                <input type="radio" name="m">Mężczyzna<br><br>
+                Waga <input type="placeholder" id="weight"> kg<br><br>
+                Wzrost <input type="placeholder" id="height"> cm<br><br>
+                <button onclick="calcBmi()" type="button">Oblicz</button>
+            </fieldset>
+        </section>
+        <section >
+            <fieldset id="result">
+                <legend>Twój wynik:</legend>
+                <input type="text" id="finalResult" disabled></input>
+            </fieldset>
+        </section>
+        <section id="explanation">
+            <h2>Sprawdź co dokładnie oznacza Twój wynik:</h2>
+            <table>
+                <tr id="range">
+                    <td id="one">BMI 10-14</td>
+                    <td id="two">BMI 15-18</td>
+                    <td id="three">BMI 19-24</td>
+                    <td id="four">BMI 25-29</td>
+                    <td id="five">BMI 30-39</td>
+                    <td id="six">BMI 40-49</td>
+                    <td id="seven">BMI > 49</td>
+                </tr>
+                <tr id="description">
+                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius est aliquam, consequatur, molestiae fuga porro fugiat facilis provident placeat pariatur aspernatur dignissimos voluptas ullam labore veritatis quasi voluptatum velit.</td>
+                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius est aliquam, consequatur, molestiae fuga porro fugiat facilis provident placeat pariatur aspernatur dignissimos voluptas ullam labore veritatis quasi voluptatum velit.</td>
+                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius est aliquam, consequatur, molestiae fuga porro fugiat facilis provident placeat pariatur aspernatur dignissimos voluptas ullam labore veritatis quasi voluptatum velit.</td>
+                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius est aliquam, consequatur, molestiae fuga porro fugiat facilis provident placeat pariatur aspernatur dignissimos voluptas ullam labore veritatis quasi voluptatum velit.</td>
+                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius est aliquam, consequatur, molestiae fuga porro fugiat facilis provident placeat pariatur aspernatur dignissimos voluptas ullam labore veritatis quasi voluptatum velit.</td>
+                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius est aliquam, consequatur, molestiae fuga porro fugiat facilis provident placeat pariatur aspernatur dignissimos voluptas ullam labore veritatis quasi voluptatum velit.</td>
+                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius est aliquam, consequatur, molestiae fuga porro fugiat facilis provident placeat pariatur aspernatur dignissimos voluptas ullam labore veritatis quasi voluptatum velit.</td>
+                </tr>
+                <tr>
+                    <td><img src="" alt=""></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    
+   
+        
+<!-- ************************* Stopki ************************* -->
+    <footer id="contact">
+      <div class="col">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Akademia Siłacza</h3>
+            <p>ul. Długa 58 <br> 3 piętro <br> Gdańsk</p>
+      </div>
+      <div class="col">
+            <i class="far fa-clock"></i>
+            <h3>PONIEDZIAŁEK - SOBOTA</h3>
+            <p>07:00 - 22:00</p>
+            <h3>NIEDZIELA</h3>
+            <p>08:00 - 20:00</p>
+      </div>
+      <div class="col">
+            <i class="fas fa-phone"></i>
+            <p>Recepcja: +48 58 301 65 98</p>
+            <p>Dietetyk: +48 58 301 66 99</p>
+      </div>
+      <div class="col">
+            <i class="far fa-envelope"></i>
+            <p>contact@akademia.com</p>
+      </div>
+      <div id ="socialmedia">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </footer>
+    <footer id="copyright">
+        <p>Copyright 2019 &copy; Akademia Siłacza S.A.<span id="divider">|</span><a href="#">Polityka prywatności</a></p>
+    </footer>
+    <a id="button"></a>
+</body>
+</html>

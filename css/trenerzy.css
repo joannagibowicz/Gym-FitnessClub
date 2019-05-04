@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/halftone.png);
+    font-family: 'Baloo Chettan', cursive;
+    overflow-x: hidden;
+}
+
+/*************************** Nagłówek + Pasek nawigacyjny ***************************************/
+header{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    width: 100%;
+    background-image: url(/img/fitness-1882721_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+}
+
+#navigation {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#navigation > h1{
+    margin: 0;
+    padding: 0;
+    color: rgb(236, 227, 207);
+    font-size: 50px;
+    font-weight: 100;
+    position: relative;
+    top: 50px;
+    left: 150px;
+    text-shadow: 5px 2px rgb(34, 33, 33);
+}
+
+#strongman{
+    height: 10%;
+    width: 10%;
+    position: relative;
+    top:70px;
+    left: 260px;
+    background-color: orangered;
+    border-radius: 50%;
+}
+
+
+#strongman:hover{
+    cursor: pointer;
+    animation: spin 1.5s infinite linear;
+}
+
+#mainlist{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    top: 65px;
+    left: 600px;
+}
+
+#mainlist > li{
+    float: left;
+    width: 180px;
+    height: 40px;
+}
+
+#mainlist > li > a{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: rgb(236, 227, 207);
+    padding: 10px 15px;
+    margin: 10px 5px 1px 10px;
+    border: 1px solid rgb(236, 227, 207);
+    border-radius: 8px;
+}
+nav > ul > li > #trenerzy{
+    color: orangered;
+    border: 1px solid orangered;
+   
+}
+
+#mainlist > li > a:hover {
+    color: rgb(236, 227, 207);
+    background: orangered;
+    border: 1px solid rgb(236, 227, 207);
+    font-size: 20px;
+}
+
+/**************************** Główna część ****************************************/
+
+#container{
+    margin: 25px;
+    position: relative;
+    top: 350px;
+}
+
+#link a{
+    color: orangered;
+    text-decoration: none;
+}
+
+article > img{
+    height: 10%;
+    width: 10%;
+    float: left;
+}
+
+.coach{
+    border: 2px solid orangered;
+    border-radius: 4px;
+}
+
+/*************************************** Stopka1 ************************************/
+#contact{
+    width: 100%;
+    height: 45vh;
+    position: relative;
+    top: 500px;
+    background-color: rgb(113, 113, 117);
+    color: rgb(236, 227, 207);
+    font-family: 'Nunito', sans-serif;
+}
+
+.col{
+    float: left;
+    margin-right: 50px;
+    padding: 30px;
+    text-align: center;
+    height: 160px;
+}
+
+.col:first-child{
+    margin-left: 190px;
+}
+
+#socialmedia{
+    clear: both;
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+
+#socialmedia i{
+    margin-right: 30px;
+}
+
+#socialmedia a{
+    text-decoration: none;
+    color: rgb(236, 227, 207);
+}
+
+
+/*************************************** Stopka2 *************************************/
+
+#copyright{
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(83, 83, 87);
+    clear: both;
+    position: relative;
+    top: 500px;
+    bottom: 0;
+}
+
+#copyright p{
+    margin: 0;
+    color: black;
+    font-weight: 100;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+#copyright p a{
+    text-decoration: none;
+    color: black;
+}
+
+#copyright p a:hover{
+    text-decoration: underline;
+}
+
+#divider{
+    padding: 0 20px;
+}
+
+/**************** Przycisk 'Powrót do góry' *****************************/
+
+
+#button{
+  display: inline-block;
+  background-color: orangered;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: .2s;
+  z-index: 1000;
+  visibility: hidden;
+  }
+
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+
+  #button:active {
+    background-color: #555;
+  }
+
+  #button::after {
+    content: "\f106";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: rgb(236, 227, 207);
+  }
+
+  #button.show {
+    opacity: 0.7;
+    visibility: visible;
+  }
+
+
+  /************************ Animacja ************************/
+
+
+  @keyframes spin{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
