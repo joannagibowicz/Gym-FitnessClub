@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(/img/halftone.png);
+    background-image: url('../img/halftone.png');
     font-family: 'Baloo Chettan', cursive;
     overflow-x: hidden;
 }
@@ -13,7 +13,7 @@ header{
     padding: 0;
     height: 50vh;
     width: 100%;
-    background-image: url(/img/weight-loss-2036969_1920.jpg);
+    background-image: url('../img/weight-loss-2036969_1920.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,7 +27,7 @@ header{
     left: 530px;
     margin: 0;
     width: 30%;
-    background-image: url(/img/halftone.png);
+    background-image: url('../img/halftone.png');
     border-radius: 4px;
     border: 2px solid orangered;
    
@@ -74,7 +74,7 @@ header{
 #finalResult{
     font-size: 30px;
     border: none;
-    background-image: url(/img/halftone.png);
+    background-image: url('../img/halftone.png');
     font-family: 'Baloo Chettan', cursive;
     width: 440px;
 }

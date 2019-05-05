@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(/img/halftone.png);
+    background-image: url('../img/halftone.png');
     font-family: 'Baloo Chettan', cursive;
     overflow-x: hidden;
 }
@@ -13,7 +13,7 @@ header{
     padding: 0;
     height: 50vh;
     width: 100%;
-    background-image: url(/img/fitness-1882721_1920.jpg);
+    background-image: url('../img/fitness-1882721_1920.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,13 +115,13 @@ header{
    
 }
 #columnone{
-    background-image: url(/img/weight-loss-2036969_1920.jpg);
+    background-image: url('../img/weight-loss-2036969_1920.jpg');
 }
 #columntwo{
-    background-image: url(/img/breakfast-1804457_1920.jpg);
+    background-image: url('../img/breakfast-1804457_1920.jpg');
 }
 #columnthree{
-    background-image: url(/img/cocktail-1971489_1920.jpg);
+    background-image: url('../img/cocktail-1971489_1920.jpg');
 }
 #columnthree > p{
     font-size: 25px;
