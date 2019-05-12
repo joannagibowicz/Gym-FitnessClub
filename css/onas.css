@@ -8,16 +8,12 @@ body{
 
 /*************************** Nagłówek + Pasek nawigacyjny ***************************************/
 header{
-    position: absolute;
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
     height: 50vh;
     width: 100%;
-    background-image: url('../img/fitness-1882721_1920.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 0;
+    background-image: url('../img/prism.png');
+    background-repeat: repeat;
 }
 
 #navigation {
@@ -25,29 +21,27 @@ header{
     padding: 0;
     width: 100%;
 }
+#brand{
+    padding: 70px 0 0 80px;
+    width: 490px;
+    text-align: center;
+}
 
-#navigation > h1{
+#brand > h1{
     margin: 0;
     padding: 0;
     color: rgb(236, 227, 207);
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 100;
-    position: relative;
-    top: 50px;
-    left: 150px;
-    text-shadow: 5px 2px rgb(34, 33, 33);
+    text-shadow: rgb(39, 37, 37) 5px 5px;
 }
 
 #strongman{
-    height: 10%;
-    width: 10%;
-    position: relative;
-    top:70px;
-    left: 260px;
+    width: 30%;
     background-color: orangered;
     border-radius: 50%;
+    text-align: center;
 }
-
 
 #strongman:hover{
     cursor: pointer;
@@ -55,14 +49,13 @@ header{
 }
 
 #mainlist{
-    padding: 0;
     margin: 0;
     list-style: none;
     font-size: 18px;
     text-align: center;
-    position: relative;
-    top: 65px;
-    left: 600px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
 }
 
 #mainlist > li{
@@ -83,11 +76,6 @@ header{
     border: 1px solid rgb(236, 227, 207);
     border-radius: 8px;
 }
-nav > ul > li > #onas{
-    color: orangered;
-    border: 1px solid orangered;
-   
-}
 
 #mainlist > li > a:hover {
     color: rgb(236, 227, 207);
@@ -96,48 +84,69 @@ nav > ul > li > #onas{
     font-size: 20px;
 }
 
+#mainlist > li > #onas{
+    border-color: orangered;
+    color: orangered;
+}
+
+#mainlist > li > #onas:hover {
+    color: rgb(236, 227, 207);
+    background: orangered;
+    border: 1px solid rgb(236, 227, 207);
+    font-size: 20px;
+}
+
+
 /**************************** Główna część ****************************************/
 
-#container{
-    margin: 25px;
-    position: relative;
-    top: 350px;
-}
 
 #link a{
     color: orangered;
     text-decoration: none;
+    margin-left: 20px;
 }
 
 #description{
-    height: 250px;
+    height: 35vh;
     width: 800px;
     border: 2px solid orangered;
     border-radius: 5px;
     padding: 15px;
     text-align: justify;
-    margin-left: 300px;
     font-family: 'Nunito', sans-serif;
-    margin-bottom: 30px;
+    margin: 20px auto;
 }
+
 #description h1{
     text-align: center;
     font-family: 'Baloo Chettan', cursive;
-    
 }
+
+#form-place{
+    margin: 50px auto;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 #form{
     float: left;
-    height: 600px;
+    height: 80vh;
     width: 500px;
     border: 2px solid orangered;
     border-radius: 5px;
     padding: 15px;
-    margin-left: 200px;
+    /* margin-left: 200px;
+    margin-bottom: 60px; */
     margin-right: 20px;
 }
+
+
 #form h2{
     text-align: center;
 }
+
 
 #form > form > input{
     border-radius: 5px;
@@ -145,10 +154,12 @@ nav > ul > li > #onas{
     height: 25px;
     width: 250px;
 }
+
 #form > form > textarea{
     border: none;
     border-radius: 5px;
 }
+
 #form > form > button{
     background-color: orangered;
     color: wheat;
@@ -162,7 +173,7 @@ nav > ul > li > #onas{
 
 #place{
     float: left;
-    height: 600px;
+    height: 80vh;
     width: 500px;
     border: 2px solid orangered;
     border-radius: 5px;
@@ -171,13 +182,15 @@ nav > ul > li > #onas{
 #place h2{
     text-align: center;
 }
+#mapka {
+    border-radius: 50%;
+}
 
 /*************************************** Stopka1 ************************************/
 #contact{
+    clear: both;
     width: 100%;
     height: 45vh;
-    position: relative;
-    top: 500px;
     background-color: rgb(113, 113, 117);
     color: rgb(236, 227, 207);
     font-family: 'Nunito', sans-serif;
@@ -219,9 +232,6 @@ nav > ul > li > #onas{
     width: 100%;
     background-color: rgb(83, 83, 87);
     clear: both;
-    position: relative;
-    top: 500px;
-    bottom: 0;
 }
 
 #copyright p{
@@ -260,9 +270,9 @@ nav > ul > li > #onas{
   margin: 30px;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 5px;
   transition: .2s;
-  z-index: 1000;
+  z-index: 1;
   visibility: hidden;
   }
 
@@ -293,6 +303,7 @@ nav > ul > li > #onas{
 
   /************************ Animacja ************************/
 
+
   @keyframes spin{
     from {
         transform: rotate(0deg);
@@ -301,3 +312,7 @@ nav > ul > li > #onas{
         transform: rotate(359deg);
     }
 }
+   
+
+
+   

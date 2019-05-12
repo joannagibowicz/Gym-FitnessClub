@@ -84,22 +84,22 @@ header{
     font-size: 20px;
 }
 
-#mainlist > li > #trenerzy{
+#mainlist > li > #cennik{
     border-color: orangered;
     color: orangered;
 }
 
-#mainlist > li > #trenerzy:hover {
+#mainlist > li > #cennik:hover {
     color: rgb(236, 227, 207);
     background: orangered;
     border: 1px solid rgb(236, 227, 207);
     font-size: 20px;
 }
 
-
 /**************************** Główna część ****************************************/
 #container{
     margin: 25px;
+    
 }
 
 #link a{

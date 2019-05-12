@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akademia Siłacza</title>
 
-    <link rel="title icon" href="./img/icon.png" type="image/png">
+    <link rel="title icon" href="img/icon.png" type="image/png">
     <link rel="stylesheet" href="css/kalkulator.css">
     
     <script src="./js/jquery-3.4.0.min.js"></script>
@@ -37,8 +37,8 @@
                 Płeć<br>
                 <input type="radio" name="k">Kobieta
                 <input type="radio" name="m">Mężczyzna<br><br>
-                Waga <input type="placeholder" id="weight"> kg<br><br>
-                Wzrost <input type="placeholder" id="height"> cm<br><br>
+                Waga <input type="number" min="10" step="1" placeholder="np. 58" id="weight"> kg<br><br>
+                Wzrost <input type="number" min="100" step="1" placeholder="np. 158" id="height"> cm<br><br>
                 <button onclick="calcBmi()" type="button">Oblicz</button>
             </fieldset>
         </section>

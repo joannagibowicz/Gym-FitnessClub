@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akademia Siłacza</title>
 
-    <link rel="icon" href="./img/icon.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
     
     <script src="./js/jquery-3.4.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -24,8 +24,10 @@
 <body>
     <header>
         <nav id="navigation">
-            <h1>Akademia Siłacza</h1>
-                <img id="strongman" src="../img/strongman.png" alt="strongman">
+                    <div id="brand">
+                        <h1>Akademia Siłacza</h1>
+                        <img id="strongman" src="img/strongman.png" alt="strongman">
+                    </div>
                     <ul id="mainlist">
                         <li><a href="onas.html">O nas</a></li>
                         <li><a href="trenerzy.html">Trenerzy</a></li>
@@ -35,81 +37,85 @@
                     </ul>
         </nav>
     </header>
-    <!-- Kolumny -->
-        <section id="columns">
-            <div id="columnone">
-                <h2>Oblicz swoje BMI</h2>
-                <a href="kalkulator.html" target="blank"><button type="submit">Kliknij</button></a>
-            </div>
-            <div id="columntwo">
-                <h1>Zadbaj o swoją dietę</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim corporis rem dolore harum consequatur voluptate eligendi. Doloribus ad ipsa nesciunt, laboriosam, architecto vitae harum perferendis voluptatum, dolore et dolorem expedita.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim corporis rem dolore harum consequatur voluptate eligendi. Doloribus ad ipsa nesciunt, laboriosam, architecto vitae harum perferendis voluptatum, dolore et dolorem expedita.</p>
-            </div>
-            <div id="columnthree">
-                <h2>Odbierz darmową wejściówkę!</h2>
-                <p><br>Siłownia<br> + <br>Sauna<br> + <br>Koktajl białkowy</p><br><br><br><br>
-                <p>O szczegóły pytaj w recepcji</p>
-            </div>
-        </section>
-        <!-- Slider -->
+   
+    <!-- Slider -->
         <section id="container-slider">
-                    <h1 id="header-slider">Sprawdź nasze aktualności!</h1>
+                <h1 id="header-slider">Sprawdź nasze aktualności!</h1>
                 <span id="prev"><i class="fas fa-arrow-circle-left"></i></span>
+                <span id="next"><i class="fas fa-arrow-circle-right"></i></span> 
                     <div id="slider">
                         <div class="slide active">
                             <div class="slide-text">
                                 <h2>Pierwszy trening indywidualny gratis</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
                             </div>
-                                <img src="img/plank-1327256_1920.jpg" alt="Slide One">
+                            <img src="img/gym-595597_1920.jpg" alt="Slide One">
                         </div>
                         <div class="slide">  
                             <div class="slide-text">
                                 <h2>Uwaga, zmiana godzin otwarcia akademii!</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
                             </div>
-                                    <img src="img/yoga-2959226_1920.jpg" alt="Slide Two">
+                            <img src="img/fitness-818722_1280.jpg" alt="Slide Two">
                         </div>
                         <div class="slide">  
                             <div class="slide-text">
                                 <h2>Nowe zajęcia od kwietnia - Boks</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
                             </div>
-                                <img src="img/workout-1931107_1920.jpg" alt="Slide Three">
+                            <img src="img/crossfit-534615_1920.jpg" alt="Slide Three">
                         </div>
                         <div class="slide"> 
                             <div class="slide-text">
                                 <h2>Dołącz do grupy naszych instruktorów</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
                             </div>
-                                <img src="img/fitness-1677212_1920.jpg" alt="Slide Four">
+                            <img src="img/fitness-1677212_1920.jpg" alt="Slide Four">
                         </div>
                         <div class="slide">
                             <div class="slide-text">
                                 <h2>Weekendowy maraton MMA</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
                             </div>
-                                <img src="img/fitness-1348867_1920.jpg" alt="Slide Five">
+                            <img src="img/sport-1235019_1920.jpg" alt="Slide Five">
                         </div>
                         <div class="slide">
                             <div class="slide-text">
                                 <h2>Nowość - kardio poranki w każdy wtorek</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
                             </div>
-                                <img src="img/gym-595597_1920.jpg" alt="Slide Six">
+                            <img src="img/training-828741_1920.jpg" alt="Slide Six">
                         </div>
                         <div class="slide">
                             <div class="slide-text">
                                 <h2>Nasi partnerzy</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et rem sunt similique? Asperiores, accusamus dolorem dolore ipsam fuga voluptatibus reiciendis quis expedita ab iste molestiae alias, recusandae, voluptates odit.</p>
                             </div>
-                                <img src="img/plank-2054729_1920.jpg" alt="Slide Seven">
+                            <img src="img/weight-lifting-1284616_1920.jpg" alt="Slide Seven">
                         </div>
                     </div>
-           <span id="next"><i class="fas fa-arrow-circle-right"></i></span> 
+           
         </section>
-        <!-- Koniec Slider'a -->
+    <!-- Koniec Slider'a -->
+     <!-- Kolumny -->
+     <section id="columns">
+        <div id="columnone">
+            <h2>Oblicz swoje BMI</h2>
+            <a href="kalkulator.html" target="blank"><button type="submit">Kliknij</button></a>
+        </div>
+        <div id="columntwo">
+            <h1>Zadbaj o swoją dietę</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim corporis rem dolore harum consequatur voluptate eligendi. Doloribus ad ipsa nesciunt, laboriosam, architecto vitae harum perferendis voluptatum, dolore et dolorem expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim corporis rem dolore harum consequatur voluptate eligendi. Doloribus ad ipsa nesciunt, laboriosam, architecto vitae harum perferendis voluptatum, dolore et dolorem expedita.</p>
+        </div>
+        <div id="columnthree">
+            <h2>Odbierz darmową wejściówkę!</h2>
+            <p><br>Siłownia<br> + <br>Sauna<br> + <br>Koktajl białkowy</p><br><br><br><br>
+            <p>O szczegóły pytaj w recepcji</p>
+        </div>
+    </section>
+    <!-- Koniec kolumn -->
+    <!-- Stopka 1 -->
     <footer id="contact">
         <div class="col">
                 <i class="fas fa-map-marker-alt"></i>
@@ -138,9 +144,12 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
+    <!-- Koniec stopki 1 -->
+    <!-- Stopka 2 -->
     <footer id="copyright">
         <p>Copyright 2019 &copy; Akademia Siłacza S.A.<span id="divider">|</span><a href="#">Polityka prywatności</a></p>
     </footer>
+    <!-- Koniec stopki 2 -->
     <a id="button"></a>
 </body>
 </html>

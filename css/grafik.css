@@ -84,52 +84,63 @@ header{
     font-size: 20px;
 }
 
-#mainlist > li > #trenerzy{
+#mainlist > li > #grafik{
     border-color: orangered;
     color: orangered;
 }
 
-#mainlist > li > #trenerzy:hover {
+#mainlist > li > #grafik:hover {
     color: rgb(236, 227, 207);
     background: orangered;
     border: 1px solid rgb(236, 227, 207);
     font-size: 20px;
 }
 
+/*********************************** Główna część ****************************************/
 
-/**************************** Główna część ****************************************/
-#container{
-    margin: 25px;
-}
 
 #link a{
     color: orangered;
     text-decoration: none;
+    margin-left: 20px;
 }
-
-article > img{
-    padding: 30px;
-    float: left;
-    z-index: 1;
-}
-
-article > p{
-    padding: 10px;
-}
-
-.coach{
-    border: 2px solid orangered;
-    border-radius: 4px;
-    height: 230px;
-    margin-bottom: 20px;
-    font-family: 'Nunito', sans-serif;
-} 
 
 #container > section > h1 {
     text-align: center;
     font-size: 30px;
+} 
+
+/************************************ Grafik ****************************************/
+table {
+    background-color: rgb(83, 83, 87);
+    padding: 10px;
+    width: 1200px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+td{
+    border: 1px solid rgb(236, 227, 207);
+    border-radius: 4px;
+    padding: 12px;
+    text-align: center;
+    width: 165px;
 }
 
+tr > td:first-child{
+    color: rgb(236, 227, 207);
+}
+
+tr > td > a{
+    text-decoration: none;
+    color: greenyellow
+}
+
+#header{
+    color: rgb(236, 227, 207);
+
+}
+  
 /*************************************** Stopka1 ************************************/
 #contact{
     clear: both;

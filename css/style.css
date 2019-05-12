@@ -8,16 +8,12 @@ body{
 
 /*************************** Nagłówek + Pasek nawigacyjny ***************************************/
 header{
-    position: absolute;
-    margin: 0;
+    margin: 0 0 50px 0;
     padding: 0;
     height: 50vh;
     width: 100%;
-    background-image: url('../img/fitness-1882721_1920.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 0;
+    background-image: url('../img/prism.png');
+    background-repeat: repeat;
 }
 
 #navigation {
@@ -25,27 +21,26 @@ header{
     padding: 0;
     width: 100%;
 }
+#brand{
+    padding: 70px 0 0 80px;
+    width: 490px;
+    text-align: center;
+}
 
-#navigation > h1{
+#brand > h1{
     margin: 0;
     padding: 0;
     color: rgb(236, 227, 207);
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 100;
-    position: relative;
-    top: 50px;
-    left: 150px;
-    text-shadow: 5px 2px rgb(34, 33, 33);
+    text-shadow: rgb(39, 37, 37) 5px 5px;
 }
 
 #strongman{
-    height: 10%;
-    width: 10%;
-    position: relative;
-    top:70px;
-    left: 260px;
+    width: 30%;
     background-color: orangered;
     border-radius: 50%;
+    text-align: center;
 }
 
 #strongman:hover{
@@ -54,14 +49,13 @@ header{
 }
 
 #mainlist{
-    padding: 0;
     margin: 0;
     list-style: none;
     font-size: 18px;
     text-align: center;
-    position: relative;
-    top: 65px;
-    left: 600px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
 }
 
 #mainlist > li{
@@ -91,77 +85,18 @@ header{
 }
 
 
-/******************* Kolumny ***************************/
-#columns{
-    padding: 0;
-    width: 100%;
-    height: 300px;
-    position: relative;
-    top: 420px;
-    margin-left: 145px;
-}
-
-#columnone, #columntwo, #columnthree{
-    float:left;
-    width: 350px;
-    height: 500px;
-    border: 3px solid orangered;
-    border-radius: 5px;
-    margin-right: 50px;
-    padding: 10px;
-    text-align: center;
-    background-position: center;
-    background-size: cover;
-   
-}
-#columnone{
-    background-image: url('../img/weight-loss-2036969_1920.jpg');
-}
-#columntwo{
-    background-image: url('../img/breakfast-1804457_1920.jpg');
-}
-#columnthree{
-    background-image: url('../img/cocktail-1971489_1920.jpg');
-}
-#columnthree > p{
-    font-size: 25px;
-}
-
-button{
-    height: 50px;
-    width: 110px;
-    background-color: orangered;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-#columnone > a > button{
-    text-decoration: none;
-    color: black;
-    font-family: 'Baloo Chettan', cursive;
-}
-
-
 /********************************** Slider *********************************************/
 #container-slider{
     width: 1300px;
-    height: 800px;
+    height: 600px;
     overflow: hidden;
-    position: relative;
-    top: 550px;
-    left: 120px;
+    margin: 0 auto;
 }
 
 #header-slider{
-    margin: 0;
-    padding:0;
-    width: 980px;
+    padding: 0;
+    width: 100%;
     text-align: center;
-    position: relative;
-    left: 140px;
     font-size: 30px;
 }
 
@@ -169,41 +104,39 @@ button{
     width: 1250px;
     height: 500px;
     overflow: hidden;
-    float: left;
-    padding: 3px;
     border: 3px solid orangered;
     border-radius: 5px;
     background-color: rgb(83, 83, 87);
-    padding-left: 100;
+    margin: 0 auto;
 }
 
 .slide {
     width: 1245px;
     height: 495px;
+    text-align: center;
 }
 
 .slide > img{
     width: 73%;
     height: 100%;
-    padding: 2px 20px 2px 160px;
 }
 
 #prev, #next{
+    position: absolute;
     color: orangered;
     font-size: 50px;
     float:left;
-    margin-top: 200px;
     cursor: pointer;
     z-index: 100;
-    position: relative;
+    margin-top: 200px;
 }
 
 #prev{
-    margin-right: -45px;
+    margin-left: 16px;
 }
 
 #next{
-    margin-left: -45px;
+    margin-left: 1233px;  
 }
 
 .slide{
@@ -218,14 +151,78 @@ button{
     padding: 20px;
     background: rgba(70, 70, 70, 0.5);
     font-family: 'Nunito', sans-serif;
+    text-align: left;
 }
+
+/******************* Kolumny ***************************/
+#columns{
+    padding: 0;
+    width: 100%;
+    height: 70vh;
+    margin: 50px auto;
+    display:flex;
+    justify-content:center;
+}
+
+#columnone, #columntwo, #columnthree{
+    float: left;
+    width: 350px;
+    height: 99%;
+    border: 3px solid orangered;
+    border-radius: 5px;
+    margin-right: 50px;
+    padding: 10px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/img/halftone.png);
+}
+#columnthree{
+    margin-right: 0;
+}
+
+#columnone:hover{
+    background-image: url('../img/weight-loss-2036969_1920.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#columntwo:hover{
+    background-image: url('../img/breakfast-1804457_1920.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#columnthree:hover{
+    background-image: url('../img/cocktail-1971489_1920.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#columnthree > p{
+    font-size: 25px;
+}
+
+button{
+    height: 50px;
+    width: 110px;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(236, 227, 207);
+}
+
+#columnone > a > button{
+    text-decoration: none;
+    color: black;
+    font-family: 'Baloo Chettan', cursive;
+}
+
 
 /*************************************** Stopka1 ************************************/
 #contact{
     width: 100%;
     height: 45vh;
-    position: relative;
-    top: 500px;
     background-color: rgb(113, 113, 117);
     color: rgb(236, 227, 207);
     font-family: 'Nunito', sans-serif;
@@ -267,9 +264,6 @@ button{
     width: 100%;
     background-color: rgb(83, 83, 87);
     clear: both;
-    position: relative;
-    top: 500px;
-    bottom: 0;
 }
 
 #copyright p{
@@ -308,9 +302,9 @@ button{
   margin: 30px;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 5px;
   transition: .2s;
-  z-index: 1000;
+  z-index: 1;
   visibility: hidden;
   }
 
