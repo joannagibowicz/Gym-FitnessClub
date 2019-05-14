@@ -133,7 +133,7 @@ tr > td:first-child{
 
 tr > td > a{
     text-decoration: none;
-    color: greenyellow
+    color: yellow;
 }
 
 #header{
@@ -142,8 +142,7 @@ tr > td > a{
 }
   
 /*************************************** Stopka1 ************************************/
-#contact{
-    clear: both;
+footer{
     width: 100%;
     height: 45vh;
     background-color: rgb(113, 113, 117);
@@ -151,23 +150,20 @@ tr > td > a{
     font-family: 'Nunito', sans-serif;
 }
 
-.col{
-    float: left;
-    margin-right: 50px;
-    padding: 30px;
-    text-align: center;
-    height: 160px;
+#contact{
+    display: flex;
+    justify-content: center;
 }
 
-.col:first-child{
-    margin-left: 190px;
+.col{
+    float: left;
+    padding: 30px;
+    text-align: center;
 }
 
 #socialmedia{
     clear: both;
     text-align: center;
-    position: relative;
-    top: 60px;
 }
 
 #socialmedia i{
@@ -178,7 +174,6 @@ tr > td > a{
     text-decoration: none;
     color: rgb(236, 227, 207);
 }
-
 
 /*************************************** Stopka2 *************************************/
 

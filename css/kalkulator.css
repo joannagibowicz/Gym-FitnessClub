@@ -8,8 +8,6 @@ body{
 
 /*************************** Nagłówek + Pasek nawigacyjny ***************************************/
 header{
-    margin: 0 0 30px 0;
-    padding: 0;
     height: 50vh;
     width: 100%;
     background-image: url('../img/weight-loss-2036969_1920.jpg');
@@ -17,18 +15,20 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.8;
-    text-align: center;
+    margin-bottom: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 #h{
     width: 30%;
+    height: 45px;
     background-image: url('../img/halftone.png');
     border-radius: 4px;
     border: 2px solid orangered;
-    position: relative;
-    top: 270px;
-    left: 500px;
-   
+    text-align: center;
+    margin-top: 250px;
 }
 
 header > #h > h1{
@@ -43,45 +43,39 @@ header > #h > h1{
     border-radius: 4px;
     padding: 15px;
     font-family: 'Nunito', sans-serif;
-    margin: 0 0 30px 200px;
+    margin: 0 auto;
+}
+
+#columns{
+    display: flex;
+    justify-content: center;
+
+}
+
+#calculator, #value{
+    float:left;
+    width: 450px;
+    border: 2px solid orangered;
+    border-radius: 4px;
+    padding: 15px;
+    font-family: 'Nunito', sans-serif;
+    margin: 15px 0;
 }
 
 #calculator{
-    float:left;
-    width: 450px;
-    border: 2px solid orangered;
-    border-radius: 4px;
-    padding: 15px;
-    font-family: 'Nunito', sans-serif;
-    margin: 0 10px 30px 260px;
+    margin-right: 20px;
 }
+
 #result{
-    float:left;
-    width: 450px;
-    border: 2px solid orangered;
-    border-radius: 4px;
-    padding: 15px;
-    font-family: 'Nunito', sans-serif;
-}
-#finalResult{
     font-size: 30px;
     border: none;
     background-image: url('../img/halftone.png');
     font-family: 'Baloo Chettan', cursive;
     width: 440px;
 }
+
 legend{
     font-family: 'Baloo Chettan', cursive;
-}
-
-#explanation{
-    clear: both;
-    width: 1300px;
-    border: 2px solid orangered;
-    border-radius: 4px;
-    padding: 15px;
-    font-family: 'Nunito', sans-serif;
-    margin: 0 10px 50px 130px;
 }
 
 #weight, #height{
@@ -98,6 +92,16 @@ fieldset > button{
 }
 
 /***************************************  Tabela ******************************************/
+#explanation{
+    clear: both;
+    width: 80%;
+    border: 2px solid orangered;
+    border-radius: 4px;
+    padding: 15px;
+    font-family: 'Nunito', sans-serif;
+    margin: 20px auto;
+}
+
 table{
     padding: 15px;
 }
@@ -106,7 +110,7 @@ table{
     border-radius: 4px;
 }
 #one{
-   background-color: skyblue;
+   background-color: rgb(146, 212, 238);
 }
 #two{
     background-color: rgb(60, 156, 235);
@@ -115,7 +119,7 @@ table{
     background-color: rgb(35, 231, 35);
 }
 #four{
-    background-color: yellow;
+    background-color: rgb(243, 243, 8);
 }
 #five{
     background-color: rgb(243, 176, 52);
@@ -124,7 +128,7 @@ table{
     background-color: rgb(236, 135, 41);
 }
 #seven{
-    background-color: red;
+    background-color: rgb(245, 14, 14);
 }
 #description > td{
     font-size: 14px;
@@ -134,7 +138,7 @@ table{
 
 
 /*************************************** Stopka1 ************************************/
-#contact{
+footer{
     width: 100%;
     height: 45vh;
     background-color: rgb(113, 113, 117);
@@ -142,23 +146,20 @@ table{
     font-family: 'Nunito', sans-serif;
 }
 
-.col{
-    float: left;
-    margin-right: 50px;
-    padding: 30px;
-    text-align: center;
-    height: 160px;
+#contact{
+    display: flex;
+    justify-content: center;
 }
 
-.col:first-child{
-    margin-left: 190px;
+.col{
+    float: left;
+    padding: 30px;
+    text-align: center;
 }
 
 #socialmedia{
     clear: both;
     text-align: center;
-    position: relative;
-    top: 60px;
 }
 
 #socialmedia i{
@@ -169,7 +170,6 @@ table{
     text-decoration: none;
     color: rgb(236, 227, 207);
 }
-
 
 /*************************************** Stopka2 *************************************/
 
@@ -202,6 +202,7 @@ table{
 #divider{
     padding: 0 20px;
 }
+
 
 /**************** Przycisk 'Powrót do góry' *****************************/
 

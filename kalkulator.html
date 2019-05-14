@@ -31,22 +31,25 @@
             <h2>Co to jest BMI ???</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet doloribus officiis veniam laudantium maiores corporis earum fuga. Rerum tempora aspernatur adipisci. Corporis inventore voluptatem expedita. Praesentium nesciunt ex voluptatum! Distinctio eum quasi aspernatur quia aliquid possimus, quidem, inventore quisquam nobis, facilis quibusdam mollitia ipsa. Quia assumenda culpa neque alias unde magnam nobis, quos ullam vitae dolores inventore, quae, possimus delectus eveniet cumque ducimus cum. Corrupti accusamus nam ipsam velit! Alias qui asperiores beatae commodi? Necessitatibus natus magnam illum. Nesciunt numquam ducimus adipisci magni facilis facere maiores atque, ex eum accusantium totam dolor officia ea optio obcaecati possimus itaque dicta iure sint! Earum quae excepturi labore quas doloribus sit rerum perspiciatis voluptatem dignissimos obcaecati officiis praesentium reprehenderit mollitia nemo, nihil necessitatibus, voluptate, consequuntur eos modi dolor laborum sed aliquid est. Delectus, voluptas. Accusantium iste harum asperiores, aut optio, modi minus labore facere sapiente earum perferendis non tempore qui laborum error illum pariatur aliquid sit deleniti consequuntur quia rem eius sed. Reprehenderit, accusamus! Quam quasi, facilis reiciendis iste, expedita corporis dolorum officia, totam magnam doloremque minus? Facilis impedit minima commodi rem reiciendis quis dolorum. Nulla, neque sequi quis aut asperiores voluptate quae rem! Libero exercitationem aut minima magni, iste nulla modi. Nam.</p>
         </section>
-        <section>
-            <fieldset id="calculator">
-               <legend>Oblicz swoje BMI</legend>
-                Płeć<br>
-                <input type="radio" name="k">Kobieta
-                <input type="radio" name="m">Mężczyzna<br><br>
-                Waga <input type="number" min="10" step="1" placeholder="np. 58" id="weight"> kg<br><br>
-                Wzrost <input type="number" min="100" step="1" placeholder="np. 158" id="height"> cm<br><br>
-                <button onclick="calcBmi()" type="button">Oblicz</button>
-            </fieldset>
-        </section>
-        <section >
-            <fieldset id="result">
-                <legend>Twój wynik:</legend>
-                <input type="text" id="finalResult" disabled></input>
-            </fieldset>
+        <section id="columns">
+            <div>
+                <fieldset id="calculator">
+                    <legend>Oblicz swoje BMI</legend>
+                        Płeć<br>
+                        <input type="radio" name="plec" value="k">Kobieta
+                        <input type="radio" name="plec" value="m">Mężczyzna<br><br>
+                        Waga <input type="number" min="10" step="1" placeholder="np. 58" id="weight"> kg<br><br>
+                        Wzrost <input type="number" min="100" step="1" placeholder="np. 158" id="height"> cm<br><br>
+                        <button onclick="calcBmi()" type="button">Oblicz</button>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset id="value">
+                    <legend>Twój wynik:</legend>
+                    <input type="text" id="result" disabled></input>  
+                   
+                </fieldset>
+            </div>
         </section>
         <section id="explanation">
             <h2>Sprawdź co dokładnie oznacza Twój wynik:</h2>
@@ -69,47 +72,46 @@
                     <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius est aliquam, consequatur, molestiae fuga porro fugiat facilis provident placeat pariatur aspernatur dignissimos voluptas ullam labore veritatis quasi voluptatum velit.</td>
                     <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius est aliquam, consequatur, molestiae fuga porro fugiat facilis provident placeat pariatur aspernatur dignissimos voluptas ullam labore veritatis quasi voluptatum velit.</td>
                 </tr>
-                <tr>
-                    <td><img src="" alt=""></td>
-                </tr>
             </table>
         </section>
     </main>
-    
-   
-        
-<!-- ************************* Stopki ************************* -->
-    <footer id="contact">
-      <div class="col">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>Akademia Siłacza</h3>
-            <p>ul. Długa 58 <br> 3 piętro <br> Gdańsk</p>
-      </div>
-      <div class="col">
-            <i class="far fa-clock"></i>
-            <h3>PONIEDZIAŁEK - SOBOTA</h3>
-            <p>07:00 - 22:00</p>
-            <h3>NIEDZIELA</h3>
-            <p>08:00 - 20:00</p>
-      </div>
-      <div class="col">
-            <i class="fas fa-phone"></i>
-            <p>Recepcja: +48 58 301 65 98</p>
-            <p>Dietetyk: +48 58 301 66 99</p>
-      </div>
-      <div class="col">
-            <i class="far fa-envelope"></i>
-            <p>contact@akademia.com</p>
-      </div>
-      <div id ="socialmedia">
+<!-- Stopka 1 -->
+<footer>
+        <div id="contact">
+            <div class="col">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Akademia Siłacza</h3>
+                <p>ul. Długa 58 <br> 3 piętro <br> Gdańsk</p>
+            </div>
+            <div class="col">
+                <i class="far fa-clock"></i>
+                <h3>PONIEDZIAŁEK - SOBOTA</h3>
+                <p>07:00 - 22:00</p>
+                <h3>NIEDZIELA</h3>
+                <p>08:00 - 20:00</p>
+            </div>
+            <div class="col">
+                <i class="fas fa-phone"></i>
+                <p>Recepcja: +48 58 301 65 98</p>
+                <p>Dietetyk: +48 58 301 66 99</p>
+            </div>
+            <div class="col">
+                <i class="far fa-envelope"></i>
+                <p>contact@akademia.com</p>
+            </div>
+        </div>
+        <div id ="socialmedia">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-google-plus-g"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
-    </footer>
-    <footer id="copyright">
+        </div>
+</footer>
+<!-- Koniec stopki 1 -->
+<!-- Stopka 2 -->
+<footer id="copyright">
         <p>Copyright 2019 &copy; Akademia Siłacza S.A.<span id="divider">|</span><a href="#">Polityka prywatności</a></p>
-    </footer>
+</footer>
+<!-- Koniec stopki 2 -->
     <a id="button"></a>
 </body>
 </html>
