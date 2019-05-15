@@ -161,7 +161,7 @@ td > ul{
     font-size: 18px;
 }
 #include > td > ul > li:before{
-    content: "\f44b";
+    content: "\00226B";
 }
 
 
