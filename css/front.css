@@ -1,0 +1,395 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/halftone.png');
+    font-family: 'Baloo Chettan', cursive;
+    overflow-x: hidden;
+}
+
+/*************************** Nagłówek + Pasek nawigacyjny ***************************************/
+header{
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+    width: 100%;
+    background-image: url('../img/prism.png');
+    background-repeat: repeat;
+}
+
+#navigation {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#navigation > #firstLine, #secondLine{
+    margin: 0;
+    padding: 0;
+    color: rgb(236, 227, 207);
+    font-size: 50px;
+    font-weight: 50;
+    text-shadow: rgb(39, 37, 37) 5px 5px;
+}
+
+#firstLine{
+    position: absolute;
+    top: 60px;
+    left: 200px;
+}
+#secondLine{
+    position: absolute;
+    top: 115px;
+    left: 200px;
+}
+
+#strongman{
+    width: 120px;
+    background-color: orangered;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#strongman:hover{
+    cursor: pointer;
+    animation: spin 1.5s infinite linear;
+}
+
+#mainlist{
+    margin: 0;
+    list-style: none;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 16%;
+    left: 35%;
+}
+
+#mainlist > li{
+    float: left;
+    width: 180px;
+    height: 40px;
+}
+
+#mainlist > li > a{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: orangered;
+    padding: 10px 15px;
+    margin: 10px 5px 1px 10px;
+    border: 1px solid orangered;
+    border-radius: 8px;
+}
+    
+#mainlist > li > a:hover {
+    color: rgb(236, 227, 207);
+    background: orangered;
+    border: 1px solid rgb(236, 227, 207);
+    font-size: 20px;
+}
+
+/**************************** Slogan *************************************/
+
+#slogan{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+
+#slogan > h1{
+    margin: 0;
+    color: rgb(226, 217, 197);
+    font-size: 80px;
+    display: inline-block;
+}
+
+#partOne{
+    animation: moveRight 2s both;
+}
+
+#partTwo{
+    animation: moveLeft 2s both;
+    animation-delay: 1s;
+}
+
+.red{
+    color: orangered;
+}
+
+/********************************** Slider *********************************************/
+#container-slider{
+    width: 1300px;
+    height: 600px;
+    overflow: hidden;
+    margin: 10px auto 0 auto;
+}
+
+#header-slider{
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+#slider{
+    width: 1250px;
+    height: 500px;
+    overflow: hidden;
+    border: 3px solid orangered;
+    border-radius: 5px;
+    background-color: rgb(83, 83, 87);
+    margin: 0 auto;
+}
+
+.slide {
+    width: 1245px;
+    height: 495px;
+    text-align: center;
+}
+
+.slide > img{
+    width: 73%;
+    height: 100%;
+}
+
+#prev, #next{
+    position: absolute;
+    color: orangered;
+    font-size: 50px;
+    float:left;
+    cursor: pointer;
+    z-index: 100;
+    margin-top: 200px;
+}
+
+#prev{
+    margin-left: 16px;
+}
+
+#next{
+    margin-left: 1233px;  
+}
+
+.slide{
+    position: absolute;
+}
+
+.slide-text{
+    position: absolute;
+    color: rgb(236, 227, 207);
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background: rgba(70, 70, 70, 0.5);
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+}
+
+/******************* Kolumny ***************************/
+#columns{
+    padding: 0;
+    width: 100%;
+    height: 65vh;
+    margin: 0 auto 80px auto;
+    display:flex;
+    justify-content:center;
+    overflow: hidden;
+}
+
+#columnone, #columntwo, #columnthree{
+    float: left;
+    width: 350px;
+    border: 3px solid orangered;
+    border-radius: 5px;
+    margin-right: 50px;
+    padding: 10px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/img/halftone.png);
+}
+#columnthree{
+    margin-right: 0;
+}
+
+#columnone, #columntwo, #columnthree:hover{
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#columnone:hover{
+    background-image: url('../img/weight-loss-2036969_1920.jpg');
+    
+}
+#columntwo:hover{
+    background-image: url('../img/breakfast-1804457_1920.jpg');
+  
+}
+#columnthree:hover{
+    background-image: url('../img/cocktail-1971489_1920.jpg');
+}
+
+#columnthree > p{
+    font-size: 25px;
+}
+
+button{
+    height: 50px;
+    width: 110px;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(236, 227, 207);
+}
+
+#columnone > a > button{
+    text-decoration: none;
+    color: black;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+
+/*************************************** Stopka1 ************************************/
+footer{
+    width: 100%;
+    height: 43vh;
+    background-color: rgb(113, 113, 117);
+    color: rgb(236, 227, 207);
+    font-family: 'Nunito', sans-serif;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+}
+
+.col{
+    float: left;
+    padding: 30px;
+    text-align: center;
+}
+
+#socialmedia{
+    clear: both;
+    text-align: center;
+}
+
+#socialmedia i{
+    margin-right: 30px;
+}
+
+#socialmedia a{
+    text-decoration: none;
+    color: rgb(236, 227, 207);
+}
+
+/*************************************** Stopka2 *************************************/
+
+#copyright{
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(83, 83, 87);
+    clear: both;
+}
+
+#copyright p{
+    margin: 0;
+    color: black;
+    font-weight: 100;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+#copyright p a{
+    text-decoration: none;
+    color: black;
+}
+
+#copyright p a:hover{
+    text-decoration: underline;
+}
+
+#divider{
+    padding: 0 20px;
+}
+
+/**************** Przycisk 'Powrót do góry' *****************************/
+
+
+#button{
+  display: inline-block;
+  background-color: orangered;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 5px;
+  transition: .2s;
+  z-index: 1;
+  visibility: hidden;
+  }
+
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+
+  #button:active {
+    background-color: #555;
+  }
+
+  #button::after {
+    content: "\f106";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: rgb(236, 227, 207);
+  }
+
+  #button.show {
+    opacity: 0.7;
+    visibility: visible;
+  }
+
+
+  /************************ Animacja ************************/
+
+
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes moveRight{
+    0% { transform:translateX(-100%); opacity: 0;}
+    100% { transform:translateX(0); opacity: 1;}
+}
+
+@keyframes moveLeft{
+    0% { transform:translateX(100%); opacity: 0;}
+    100% { transform:translateX(0); opacity: 1;}
+}
+
+
