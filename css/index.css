@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/prism.png');
+    background-color: black;
+    font-family: 'Baloo Chettan', cursive;
+    overflow: hidden;
+}
+
+#middle{
+    height: 700px;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+    border-radius: 50%;
+}
+
+img:hover{
+    cursor: pointer;
+    animation: spin 1.5s infinite linear;
+} 
+
+h1{
+    color: rgb(236, 227, 207);
+    font-size: 50px;
+}
+
+a{
+    color: orangered;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
