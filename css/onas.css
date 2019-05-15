@@ -22,7 +22,7 @@ header{
     width: 100%;
 }
 
-#navigation > #firstLine, #secondLine{
+#firstLine, #secondLine{
     margin: 0;
     padding: 0;
     color: rgb(236, 227, 207);

@@ -6,6 +6,7 @@ body{
     overflow-x: hidden;
 }
 
+
 /*************************** Nagłówek + Pasek nawigacyjny ***************************************/
 header{
     margin: 0;
@@ -22,7 +23,7 @@ header{
     width: 100%;
 }
 
-#navigation > #firstLine, #secondLine{
+#firstLine, #secondLine{
     margin: 0;
     padding: 0;
     color: rgb(236, 227, 207);
@@ -200,12 +201,12 @@ header{
     margin: 0 auto 80px auto;
     display:flex;
     justify-content:center;
-    overflow: hidden;
 }
 
 #columnone, #columntwo, #columnthree{
     float: left;
     width: 350px;
+    height: 95%;
     border: 3px solid orangered;
     border-radius: 5px;
     margin-right: 50px;
@@ -391,5 +392,4 @@ footer{
     0% { transform:translateX(100%); opacity: 0;}
     100% { transform:translateX(0); opacity: 1;}
 }
-
 
