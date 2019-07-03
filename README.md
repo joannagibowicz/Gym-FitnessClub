@@ -1,49 +1,31 @@
 # Gym-FitnessClub
-Website for gym &amp; fitness club.
+Website for gym &amp; fitness clubs.
 
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
+* [Credits](#credits)
 * [Contact](#contact)
 
 ## General info
-Add more general information about project. What the purpose of the project is? Motivation?
+This website was created as a final project of post-graduate studies at WSB University in Gdansk. The aim was to practise HTML, CSS and JS.
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/screenshot_gym.png)
 
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* HTML5
+* CSS
+* JavaScript
 
-## Setup
-Describe how to install / setup your local environement / add link to demo version.
+## Credits
+Pictures and icons used from:
+https://pixabay.com/pl
+https://www.toptal.com/designers/subtlepatterns
+https://www.flaticon.com/free-icon/strongman_405267
+https://www.freepik.com https://all-free-download.com
 
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
-
-## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
-
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
-
-## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
-
-## Inspiration
-Add here credits. Project inspired by..., based on...
 
 ## Contact
-Created by @Joanna Gibowicz - feel free to contact me!
+Created by @Joanna Gibowicz - feel free to contact me via [LinkedIn] (https://www.linkedin.com/in/joannagibowicz/) !
