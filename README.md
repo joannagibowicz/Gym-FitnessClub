@@ -28,4 +28,4 @@ https://www.freepik.com https://all-free-download.com
 
 
 ## Contact
-Created by @Joanna Gibowicz - feel free to contact me via [LinkedIn] (https://www.linkedin.com/in/joannagibowicz/) !
+Created by @Joanna Gibowicz - feel free to contact me via [LinkedIn] (#https://www.linkedin.com/in/joannagibowicz/) !
