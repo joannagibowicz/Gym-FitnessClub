@@ -18,6 +18,7 @@ This website was created as a final project of post-graduate studies at WSB Univ
 * HTML5
 * CSS
 * JavaScript
+* jQuery
 
 ## Credits
 Pictures and icons used from:
